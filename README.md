@@ -162,5 +162,54 @@ print(min(tup6))  # Output: -5
 # Set
 Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 * Creating a set: You can create a set in Python by enclosing a comma-separated sequence of elements in curly braces `{}`. Alternatively, you can use the `set()` constructor to create an empty set or convert other iterable types (like lists or tuples) to a set.
+```python
+my_set = {1, 2, 3}
+my_set = set([1, 2, 3])
+```
 * Adding elements to a set: You can add an element to a set using the `add()` method. The element will be added to the set if it doesn't already exist in the set.
-* 
+```python
+my_set.add(4)
+```
+* Removing elements from a set: You can remove an element from a set using the `remove()` method. If the element doesn't exist in the set, a `KeyError` will be raised.
+```python
+my_set.remove(3)
+```
+* Checking membership: You can check if an element exists in a set using the `in` operator. The operator returns `True` if the element exists in the set and `False` otherwise.
+```python
+print(2 in my_set)  # returns True
+```
+* Union of sets: You can compute the union of two or more sets using the `union()` method or the `|` operator. The union of sets contains all unique elements from all sets.
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1.union(set2)  # returns {1, 2, 3, 4, 5}
+```
+* Intersection of sets: You can compute the intersection of two or more sets using the `intersection()` method or the `&` operator. The intersection of sets contains only elements that exist in all sets.
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+intersection_set = set1.intersection(set2)  # returns {3}
+```
+* Difference of sets: You can compute the difference of two sets using the `difference()` method or the `-` operator. The difference of sets contains elements that exist in the first set but not in the second set.
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+difference_set = set1.difference(set2)  # returns {1, 2}
+```
+* Symmetric difference of sets: You can compute the symmetric difference of two sets using the `symmetric_difference()` method or the `^` operator. The symmetric difference of sets contains elements that exist in either the first or the second set, but not in both sets.
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+sym_difference_set = set1.symmetric_difference(set2)  # returns {1, 2, 4, 5}
+```
+* Subset and superset: You can check if a set is a subset of another set using the `issubset()` method or the `<=` operator. A set is a subset if all its elements exist in the other set. Similarly, you can check if a set is a superset of another set using the `issuperset()` method or the `>=` operator. A set is a superset if it contains all elements of the other set.
+```python
+set1 = {1, 2, 3}
+set2 = {1, 2}
+set2.issubset(set1)  # returns True
+set1.issuperset(set2)  # returns True
+```
+* Copying a set: You can create a copy of a set using the `copy()` method. The copy is a new set with the same elements as the original set. Modifying the copy doesn't affect the original set.
+```python
+new_set = my_set.copy()
+```
