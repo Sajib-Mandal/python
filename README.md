@@ -1,4 +1,5 @@
 # List
+List is a collection which is ordered and changeable. Allows duplicate members.
 * Creating a list: Lists can be created using square brackets [] or using the list() constructor.
 ```python
 # Creating a list
