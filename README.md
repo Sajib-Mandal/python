@@ -1,5 +1,5 @@
 # List
-### List is a collection which is ordered and changeable. Allows duplicate members.
+## List is a collection which is ordered and changeable. Allows duplicate members.
 * Creating a list: Lists can be created using square brackets `[]` or using the `list()` constructor.
 ```python
 # Creating a list
@@ -90,7 +90,7 @@ new_list = my_list.copy()
 print(new_list)       # Output: [8, 7, 6, 5, 4, 3, 2, 1]
 ```
 # Tuple
-### Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+## Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 * Creating a tuple: You can create a tuple by enclosing a comma-separated sequence of elements in parentheses.
 ```python
 # Creating a tuple
@@ -160,7 +160,7 @@ print(max(tup6))  # Output: 10
 print(min(tup6))  # Output: -5
 ```
 # Set
-### Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+## Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 * Creating a set: You can create a set in Python by enclosing a comma-separated sequence of elements in curly braces `{}`. Alternatively, you can use the `set()` constructor to create an empty set or convert other iterable types (like lists or tuples) to a set.
 ```python
 my_set = {1, 2, 3}
@@ -214,7 +214,7 @@ set1.issuperset(set2)  # returns True
 new_set = my_set.copy()
 ```
 # Dictionary
-Dictionary is a collection which is ordered** and changeable. No duplicate members.
+## Dictionary is a collection which is ordered** and changeable. No duplicate members.
 * Creating a dictionary:
 You can create a dictionary using the curly braces `{}` or the `dict()` constructor. 
 ```python
