@@ -89,3 +89,73 @@ print(2 in my_list)   # Output: True
 new_list = my_list.copy()
 print(new_list)       # Output: [8, 7, 6, 5, 4, 3, 2, 1]
 ```
+# Tuple
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+* Creating a tuple: You can create a tuple by enclosing a comma-separated sequence of elements in parentheses.
+```python
+# Creating a tuple
+tup1 = (1, 2, 3)
+tup2 = ('a', 'b', 'c')
+```
+* Accessing elements: You can access the elements of a tuple using their index, which starts from zero.
+```python
+# Accessing elements
+print(tup1[0])  # Output: 1
+print(tup2[2])  # Output: c
+```
+* Slicing: You can extract a subsequence of elements from a tuple using the slicing operator :. 
+```python
+# Slicing
+print(tup1[1:3])  # Output: (2, 3)
+```
+* Concatenation: You can combine two or more tuples into a single tuple using the + operator.
+```python
+# Concatenation
+tup3 = tup1 + tup2
+print(tup3)  # Output: (1, 2, 3, 'a', 'b', 'c')
+```
+* Repetition: You can repeat a tuple multiple times using the * operator.
+```python
+# Repetition
+tup4 = tup2 * 2
+print(tup4)  # Output: ('a', 'b', 'c', 'a', 'b', 'c')
+```
+* Length: You can find the number of elements in a tuple using the len() function. 
+```python
+# Length
+print(len(tup1))  # Output: 3
+```
+* Membership: You can check if an element is present in a tuple using the in operator. 
+```python
+# Membership
+print(2 in tup1)  # Output: True
+```
+* Iteration: You can iterate over the elements of a tuple using a for loop.
+```python
+# Iteration
+for item in tup2:
+    print(item)  # Output: a b c
+  
+for item in (1, 2, 3):
+    print(item)
+```
+* Unpacking: You can assign the elements of a tuple to individual variables using unpacking. 
+```python
+# Unpacking
+a, b, c = tup1
+print(a, b, c)  # Output: 1 2 3
+```
+* Sorting: You can sort the elements of a tuple using the sorted() function. 
+```python
+# Sorting
+tup5 = (3, 2, 1)
+sorted_tup5 = sorted(tup5)
+print(sorted_tup5)  # Output: [1, 2, 3]
+```
+* Finding maximum and minimum: You can find the maximum and minimum elements of a tuple using the max() and min() functions, respectively.
+```python
+# Finding maximum and minimum
+tup6 = (10, -5, 8, 0, 3)
+print(max(tup6))  # Output: 10
+print(min(tup6))  # Output: -5
+```
