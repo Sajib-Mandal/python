@@ -213,3 +213,12 @@ set1.issuperset(set2)  # returns True
 ```python
 new_set = my_set.copy()
 ```
+# Dictionary
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+* Creating a dictionary:
+You can create a dictionary using the curly braces {} or the dict() constructor. 
+```python
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+or
+my_dict = dict(key1='value1', key2='value2')
+```
