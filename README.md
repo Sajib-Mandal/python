@@ -161,6 +161,6 @@ print(min(tup6))  # Output: -5
 ```
 # Set
 Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
-* Creating a set: You can create a set in Python by enclosing a comma-separated sequence of elements in curly braces '{}'. Alternatively, you can use the set() constructor to create an empty set or convert other iterable types (like lists or tuples) to a set.
-* Adding elements to a set: You can add an element to a set using the add() method. The element will be added to the set if it doesn't already exist in the set.
+* Creating a set: You can create a set in Python by enclosing a comma-separated sequence of elements in curly braces '{}'. Alternatively, you can use the 'set()' constructor to create an empty set or convert other iterable types (like lists or tuples) to a set.
+* Adding elements to a set: You can add an element to a set using the `add()` method. The element will be added to the set if it doesn't already exist in the set.
 * 
