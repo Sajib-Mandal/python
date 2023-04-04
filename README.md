@@ -216,9 +216,82 @@ new_set = my_set.copy()
 # Dictionary
 Dictionary is a collection which is ordered** and changeable. No duplicate members.
 * Creating a dictionary:
-You can create a dictionary using the curly braces {} or the dict() constructor. 
+You can create a dictionary using the curly braces `{}` or the `dict()` constructor. 
 ```python
 my_dict = {'key1': 'value1', 'key2': 'value2'}
 or
 my_dict = dict(key1='value1', key2='value2')
+```
+* Accessing values in a dictionary:
+You can access the value associated with a key using square brackets `[]` or the `get()`.
+```python
+my_dict['key1']    # returns 'value1'
+my_dict.get('key2')    # returns 'value2'
+```
+* Updating values in a dictionary:
+You can update the value associated with a key by assigning a new value to the key. 
+```python
+my_dict['key1'] = 'new_value1'
+```
+* Adding a new key-value pair to a dictionary:
+You can add a new key-value pair to a dictionary by assigning a value to a new key.
+```python
+my_dict['key3'] = 'value3'
+```
+* Deleting a key-value pair from a dictionary:
+You can delete a key-value pair from a dictionary using the del statement or the `pop()` method.
+```python
+del my_dict['key2']    # deletes the key-value pair with key 'key2'
+my_dict.pop('key1')    # deletes the key-value pair with key 'key1'
+```
+* Checking if a key exists in a dictionary:
+You can check if a key exists in a dictionary using the in keyword.
+```python
+'key1' in my_dict    # returns False (if key1 was deleted in previous examples)
+'key3' in my_dict    # returns True
+```
+* Getting all keys or values in a dictionary:
+You can get all keys or values in a dictionary using the `keys()` and `values()` methods, respectively.
+```python
+my_dict.keys()    # returns a list of all keys in the dictionary
+my_dict.values()    # returns a list of all values in the dictionary
+```
+* Getting all key-value pairs in a dictionary:
+You can get all key-value pairs in a dictionary using the `items()` method. 
+```python
+my_dict.items()    # returns a list of all key-value pairs in the dictionary
+```
+* Clearing a dictionary:
+You can remove all the items from a dictionary using the `clear()` method. 
+```python
+my_dict.clear()    # removes all items from the dictionary
+```
+* Copying a dictionary:
+You can make a copy of a dictionary using the `copy()` method or the `dict()` constructor.
+```python
+new_dict = my_dict.copy()    # makes a copy of my_dict
+or
+new_dict = dict(my_dict)    # makes a copy of my_dict using the dict constructor
+```
+* Updating a dictionary with another dictionary:
+You can update a dictionary with the items from another dictionary using the `update()` method. 
+```python
+other_dict = {'key4': 'value4', 'key5': 'value5'}
+my_dict.update(other_dict)    # adds the items from other_dict to my_dict
+```
+* Getting a default value for a non-existent key:
+You can get a default value for a non-existent key using the `setdefault()` method.
+```python
+my_dict.setdefault('key6', 'default_value')    # sets the value for 'key6' if it does not exist in the dictionary
+```
+* Iterating over a dictionary:
+You can iterate over a dictionary using a for loop.
+```python
+for key in my_dict:
+    print(key, my_dict[key])
+```
+* Getting the length of a dictionary:
+You can get the number of items in a dictionary using the `len()` function.
+```python
+len(my_dict)    # returns the number of items in the dictionary
 ```
