@@ -1,6 +1,6 @@
 # List
 List is a collection which is ordered and changeable. Allows duplicate members.
-* Creating a list: Lists can be created using square brackets [] or using the list() constructor.
+* Creating a list: Lists can be created using square brackets `[]` or using the `list()` constructor.
 ```python
 # Creating a list
 my_list = [1, 2, 3, 4, 5]
@@ -20,70 +20,70 @@ print(my_list[1:3])   # Output: [2, 3]
 print(my_list[:3])    # Output: [1, 2, 3]
 print(my_list[2:])    # Output: [3, 4, 5]
 ```
-* Appending: You can add new elements to the end of a list using the append() method.
+* Appending: You can add new elements to the end of a list using the `append()` method.
 ```python
 # Appending
 my_list.append(6)
 print(my_list)        # Output: [1, 2, 3, 4, 5, 6]
 ````
-* Extending: You can add multiple elements to the end of a list using the extend() method.
+* Extending: You can add multiple elements to the end of a list using the `extend()` method.
 ```python
 # Extending
 my_list.extend([7, 8, 9])
 print(my_list)        # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-* Inserting: You can insert an element at a specific position in the list using the insert() method.
+* Inserting: You can insert an element at a specific position in the list using the `insert()` method.
 ```python
 # Inserting
 my_list.insert(3, "inserted")
 print(my_list)        # Output: [1, 2, 3, 'inserted', 4, 5, 6, 7, 8, 9]
 ```
-* Removing: You can remove an element from a list using the remove() method.
+* Removing: You can remove an element from a list using the `remove()` method.
 ```python
 # Removing
 my_list.remove("inserted")
 print(my_list)        # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-* Pop: You can remove and return the last element from a list using the pop() method.
+* Pop: You can remove and return the last element from a list using the `pop()` method.
 ```python
 # Pop
 last_element = my_list.pop()
 print(last_element)   # Output: 9
 print(my_list)        # Output: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
-* Index: You can find the index of an element in a list using the index() method.
+* Index: You can find the index of an element in a list using the `index()` method.
 ```python
 # Index
 print(my_list.index(3))  # Output: 2
 ```
-* Count: You can count the number of occurrences of an element in a list using the count() method.
+* Count: You can count the number of occurrences of an element in a list using the `count()` method.
 ```python
 # Count
 print(my_list.count(2))  # Output: 1
 ```
-* Sorting: You can sort the elements in a list using the sort() method.
+* Sorting: You can sort the elements in a list using the `sort()` method.
 ```python
 # Sorting
 my_list.sort()
 print(my_list)        # Output: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
-* Reversing: You can reverse the order of the elements in a list using the reverse() method.
+* Reversing: You can reverse the order of the elements in a list using the `reverse()` method.
 ```python
 # Reversing
 my_list.reverse()
 print(my_list)        # Output: [8, 7, 6, 5, 4, 3, 2, 1]
 ```
-* Length: You can find the number of elements in a list using the len() function.
+* Length: You can find the number of elements in a list using the `len()` function.
 ```python
 # Length
 print(len(my_list))   # Output: 8
 ```
-* Membership: You can check if an element is in a list using the in keyword.
+* Membership: You can check if an element is in a list using the `in` keyword.
 ```python
 # Membership
 print(2 in my_list)   # Output: True
 ```
-* Copying: You can create a copy of a list using the copy() method or by using the slice notation.
+* Copying: You can create a copy of a list using the `copy()` method or by using the slice notation.
 ```python
 # Copying
 new_list = my_list.copy()
@@ -108,24 +108,24 @@ print(tup2[2])  # Output: c
 # Slicing
 print(tup1[1:3])  # Output: (2, 3)
 ```
-* Concatenation: You can combine two or more tuples into a single tuple using the + operator.
+* Concatenation: You can combine two or more tuples into a single tuple using the `+` operator.
 ```python
 # Concatenation
 tup3 = tup1 + tup2
 print(tup3)  # Output: (1, 2, 3, 'a', 'b', 'c')
 ```
-* Repetition: You can repeat a tuple multiple times using the * operator.
+* Repetition: You can repeat a tuple multiple times using the `*` operator.
 ```python
 # Repetition
 tup4 = tup2 * 2
 print(tup4)  # Output: ('a', 'b', 'c', 'a', 'b', 'c')
 ```
-* Length: You can find the number of elements in a tuple using the len() function. 
+* Length: You can find the number of elements in a tuple using the `len()` function. 
 ```python
 # Length
 print(len(tup1))  # Output: 3
 ```
-* Membership: You can check if an element is present in a tuple using the in operator. 
+* Membership: You can check if an element is present in a tuple using the `in` operator. 
 ```python
 # Membership
 print(2 in tup1)  # Output: True
@@ -145,14 +145,14 @@ for item in (1, 2, 3):
 a, b, c = tup1
 print(a, b, c)  # Output: 1 2 3
 ```
-* Sorting: You can sort the elements of a tuple using the sorted() function. 
+* Sorting: You can sort the elements of a tuple using the `sorted()` function. 
 ```python
 # Sorting
 tup5 = (3, 2, 1)
 sorted_tup5 = sorted(tup5)
 print(sorted_tup5)  # Output: [1, 2, 3]
 ```
-* Finding maximum and minimum: You can find the maximum and minimum elements of a tuple using the max() and min() functions, respectively.
+* Finding maximum and minimum: You can find the maximum and minimum elements of a tuple using the `max()` and `min()` functions, respectively.
 ```python
 # Finding maximum and minimum
 tup6 = (10, -5, 8, 0, 3)
