@@ -37,6 +37,10 @@ print(my_list)        # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Inserting
 my_list.insert(3, "inserted")
 print(my_list)        # Output: [1, 2, 3, 'inserted', 4, 5, 6, 7, 8, 9]
+
+my_list = [1, 2, 3, 4]
+my_list[1] = 89
+print(my_list) # [1, 89, 3, 4]
 ```
 * Removing: You can remove an element from a list using the `remove()` method.
 ```python
