@@ -1,4 +1,4 @@
-## isupper()	
+## isupper():	
 Returns True if all characters in the string are upper case.
 ```python
 def isUpper(s):
